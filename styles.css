@@ -1,0 +1,87 @@
+/* Burgers4Bryce – light customizations on top of Bootstrap */
+
+:root {
+    --b4b-accent: #fbbf24;
+}
+
+body {
+    background: radial-gradient(900px 600px at 10% -20%, #1b1c24 0%, #0b0c10 45%);
+    color: #e5e7eb;
+}
+
+.navbar,
+.b4b-glass {
+    backdrop-filter: saturate(1.2) blur(6px);
+    background: linear-gradient(180deg, rgba(10, 11, 16, .85), rgba(10, 11, 16, .6)) !important;
+    border-bottom: 1px solid #1c2030;
+}
+
+.b4b-card {
+    background: linear-gradient(180deg, #13141a, #0f1015);
+    border: 1px solid #1f2330 !important;
+    border-radius: 18px !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .35);
+    color: #e5e7eb;
+}
+
+.form-control,
+.form-select {
+    background: #0c0d12;
+    border: 1px solid #232938;
+    color: #e5e7eb;
+}
+
+.form-control:focus {
+    border-color: #334155;
+    box-shadow: 0 0 0 .25rem rgba(51, 65, 85, .25)
+}
+
+.btn-b4b {
+    background: linear-gradient(180deg, #fcd34d, #f59e0b);
+    color: #111;
+    font-weight: 700;
+    border: 0;
+}
+
+.b4b-logo {
+    width: 42px;
+    height: 42px;
+    border-radius: 999px;
+    display: grid;
+    place-items: center;
+    background: #1f2937;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .35);
+}
+
+.b4b-title {
+    font-weight: 800;
+    letter-spacing: .3px;
+}
+
+.b4b-grid .ratio {
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid #1f2330;
+    background: #0f1117;
+}
+
+.b4b-tile-badge {
+    position: absolute;
+    top: .5rem;
+    left: .5rem;
+    font-size: .75rem;
+    background: rgba(0, 0, 0, .55);
+    color: #fff;
+    padding: .25rem .5rem;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, .12);
+}
+
+
+/* Make Bootstrap toasts look good on dark bg */
+
+.toast.b4b-toast {
+    background: #0f1117;
+    color: #e5e7eb;
+    border: 1px solid #1f2330;
+}
